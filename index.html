@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Added comprehensive SEO meta tags -->
+    <title>FinCalculator - Free Financial Calculators | Loan, Investment, Retirement Planning Tools</title>
+    <meta name="description" content="Free financial calculators for loans, investments, retirement planning, taxes, and more. Make informed money decisions with our accurate, easy-to-use tools trusted by 50,000+ users.">
+    <meta name="keywords" content="financial calculator, loan calculator, mortgage calculator, investment calculator, retirement calculator, tax calculator, EMI calculator, SIP calculator, compound interest, financial planning">
+    <meta name="author" content="FinCalculator">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fincalculator.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fincalculator.com">
+    <meta property="og:title" content="FinCalculator - Free Financial Calculators for Smart Money Decisions">
+    <meta property="og:description" content="Calculate loans, investments, retirement savings, and taxes with our free, accurate financial tools. Trusted by 50,000+ users worldwide.">
+    <meta property="og:image" content="https://fincalculator.com/images/og-image.jpg">
+    <meta property="og:site_name" content="FinCalculator">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fincalculator.com">
+    <meta property="twitter:title" content="FinCalculator - Free Financial Calculators">
+    <meta property="twitter:description" content="Make informed financial decisions with our comprehensive suite of free calculators. Loan, investment, retirement, and tax planning tools.">
+    <meta property="twitter:image" content="https://fincalculator.com/images/twitter-image.jpg">
+    <meta property="twitter:creator" content="@fincalculator">
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="application-name" content="FinCalculator">
+    <meta name="apple-mobile-web-app-title" content="FinCalculator">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Embedded all CSS styles inline -->
+    <style>
+        /* Reset and Base Styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.6;
+          color: #333;
+          background-color: #fff;
+        }
+
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+          background: #fff;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          transition: all 0.3s ease;
+        }
+
+        .nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 20px;
+        }
+
+        .nav-logo {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #2563eb;
+        }
+
+        .nav-logo i {
+          margin-right: 0.5rem;
+          font-size: 1.8rem;
+        }
+
+        .nav-list {
+          display: flex;
+          list-style: none;
+          gap: 2rem;
+        }
+
+        .nav-link {
+          text-decoration: none;
+          color: #333;
+          font-weight: 500;
+          transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+          color: #2563eb;
+        }
+
+        .nav-actions {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .nav-toggle {
+          display: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: #333;
+        }
+
+        /* Buttons */
+        .btn {
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 8px;
+          font-weight: 600;
+          text-decoration: none;
+          display: inline-block;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-size: 1rem;
+        }
+
+        .btn-primary {
+          background: #2563eb;
+          color: white;
+        }
+
+        .btn-primary:hover {
+          background: #1d4ed8;
+          transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+          background: transparent;
+          color: #2563eb;
+          border: 2px solid #2563eb;
+        }
+
+        .btn-secondary:hover {
+          background: #2563eb;
+          color: white;
+        }
+
+        .btn-outline {
+          background: transparent;
+          color: #2563eb;
+          border: 2px solid #2563eb;
+        }
+
+        .btn-outline:hover {
+          background: #2563eb;
+          color: white;
+        }
+
+        .btn-large {
+          padding: 1rem 2rem;
+          font-size: 1.1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+          background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+          padding: 120px 0 80px;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+        }
+
+        .hero-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          align-items: center;
+        }
+
+        .hero-title {
+          font-size: 3.5rem;
+          font-weight: bold;
+          color: #1e293b;
+          margin-bottom: 1.5rem;
+          line-height: 1.2;
+        }
+
+        .hero-subtitle {
+          font-size: 1.25rem;
+          color: #64748b;
+          margin-bottom: 2rem;
+          line-height: 1.6;
+        }
+
+        .hero-stats {
+          display: flex;
+          gap: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .stat {
+          text-align: center;
+        }
+
+        .stat-number {
+          display: block;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #2563eb;
+          line-height: 1;
+        }
+
+        .stat-label {
+          font-size: 0.9rem;
+          color: #64748b;
+          font-weight: 500;
+        }
+
+        .hero-buttons {
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
+
+        .hero-illustration {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          font-size: 4rem;
+          color: #2563eb;
+          opacity: 0.8;
+        }
+
+        /* Section Titles */
+        .section-title {
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: #1e293b;
+          margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+          text-align: center;
+          font-size: 1.1rem;
+          color: #64748b;
+          margin-bottom: 3rem;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        /* Featured Calculators */
+        .featured-calculators {
+          padding: 80px 0;
+          background: #fff;
+        }
+
+        .calculators-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2rem;
+        }
+
+        .calculator-card {
+          background: #fff;
+          padding: 2rem;
+          border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .calculator-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-icon {
+          width: 80px;
+          height: 80px;
+          background: #eff6ff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1.5rem;
+          font-size: 2rem;
+          color: #2563eb;
+        }
+
+        .calculator-card h3 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #1e293b;
+          margin-bottom: 1rem;
+        }
+
+        .calculator-card p {
+          color: #64748b;
+          margin-bottom: 1.5rem;
+          line-height: 1.6;
+        }
+
+        .card-features {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          justify-content: center;
+          margin-bottom: 1.5rem;
+        }
+
+        .feature-tag {
+          background: #eff6ff;
+          color: #2563eb;
+          padding: 0.25rem 0.75rem;
+          border-radius: 20px;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+
+        /* How It Works */
+        .how-it-works {
+          padding: 80px 0;
+          background: #f8fafc;
+        }
+
+        .steps-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 3rem;
+        }
+
+        .step {
+          text-align: center;
+          position: relative;
+        }
+
+        .step-number {
+          position: absolute;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 40px;
+          height: 40px;
+          background: #2563eb;
+          color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+
+        .step-icon {
+          width: 100px;
+          height: 100px;
+          background: #eff6ff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1.5rem;
+          font-size: 2.5rem;
+          color: #2563eb;
+        }
+
+        .step h3 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #1e293b;
+          margin-bottom: 1rem;
+        }
+
+        .step p {
+          color: #64748b;
+          line-height: 1.6;
+        }
+
+        /* Benefits */
+        .benefits {
+          padding: 80px 0;
+          background: #fff;
+        }
+
+        .benefits-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2rem;
+        }
+
+        .benefit-card {
+          background: #fff;
+          padding: 2rem;
+          border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+          transform: translateY(-3px);
+        }
+
+        .benefit-icon {
+          width: 70px;
+          height: 70px;
+          background: #dcfce7;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1.5rem;
+          font-size: 2rem;
+          color: #16a34a;
+        }
+
+        .benefit-card h3 {
+          font-size: 1.3rem;
+          font-weight: bold;
+          color: #1e293b;
+          margin-bottom: 1rem;
+        }
+
+        .benefit-card p {
+          color: #64748b;
+          line-height: 1.6;
+        }
+
+        /* All Calculators */
+        .all-calculators {
+          padding: 80px 0;
+          background: #f8fafc;
+        }
+
+        .calculator-categories {
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+
+        .category-section {
+          margin-bottom: 3rem;
+        }
+
+        .category-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #1e293b;
+          margin-bottom: 1.5rem;
+          text-align: left;
+          border-bottom: 2px solid #2563eb;
+          padding-bottom: 0.5rem;
+        }
+
+        .tools-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 1.5rem;
+        }
+
+        .tool-item {
+          background: #fff;
+          padding: 1.5rem;
+          border-radius: 12px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+        }
+
+        .tool-item:hover {
+          transform: translateY(-3px);
+        }
+
+        .tool-item i {
+          font-size: 2rem;
+          color: #2563eb;
+          flex-shrink: 0;
+        }
+
+        .tool-info {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .tool-name {
+          font-weight: 600;
+          color: #1e293b;
+          font-size: 1rem;
+          margin-bottom: 0.25rem;
+        }
+
+        .tool-desc {
+          font-size: 0.85rem;
+          color: #64748b;
+          line-height: 1.4;
+        }
+
+        /* Testimonials */
+        .testimonials {
+          padding: 80px 0;
+          background: #fff;
+        }
+
+        .testimonials-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap: 2rem;
+        }
+
+        .testimonial-card {
+          background: #f8fafc;
+          padding: 2rem;
+          border-radius: 12px;
+          border-left: 4px solid #2563eb;
+        }
+
+        .testimonial-content {
+          margin-bottom: 1.5rem;
+        }
+
+        .testimonial-content p {
+          font-style: italic;
+          color: #475569;
+          font-size: 1.1rem;
+          line-height: 1.6;
+        }
+
+        .testimonial-author {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .author-avatar {
+          width: 50px;
+          height: 50px;
+          background: #2563eb;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 1.5rem;
+        }
+
+        .author-info h4 {
+          font-weight: bold;
+          color: #1e293b;
+          margin-bottom: 0.25rem;
+        }
+
+        .author-info span {
+          color: #64748b;
+          font-size: 0.9rem;
+        }
+
+        /* FAQ */
+        .faq {
+          padding: 80px 0;
+          background: #f8fafc;
+        }
+
+        .faq-container {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+
+        .faq-item {
+          background: #fff;
+          border-radius: 12px;
+          margin-bottom: 1rem;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+
+        .faq-question {
+          padding: 1.5rem;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+          background: #f8fafc;
+        }
+
+        .faq-question h3 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #1e293b;
+        }
+
+        .faq-question i {
+          color: #2563eb;
+          transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+          transform: rotate(180deg);
+        }
+
+        .faq-answer {
+          padding: 0 1.5rem;
+          max-height: 0;
+          overflow: hidden;
+          transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+          padding: 0 1.5rem 1.5rem;
+          max-height: 300px;
+        }
+
+        .faq-answer p {
+          color: #64748b;
+          line-height: 1.6;
+        }
+
+        /* Newsletter */
+        .newsletter {
+          padding: 80px 0;
+          background: #2563eb;
+          color: white;
+        }
+
+        .newsletter-content {
+          text-align: center;
+          max-width: 600px;
+          margin: 0 auto;
+        }
+
+        .newsletter h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+
+        .newsletter p {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+          opacity: 0.9;
+        }
+
+        .newsletter-form {
+          display: flex;
+          gap: 1rem;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+
+        .newsletter-form input {
+          flex: 1;
+          padding: 1rem;
+          border: none;
+          border-radius: 8px;
+          font-size: 1rem;
+        }
+
+        .newsletter-form input:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+          background: #1e293b;
+          color: white;
+          padding: 60px 0 20px;
+        }
+
+        .footer-content {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+          font-size: 1.3rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+          color: #f1f5f9;
+        }
+
+        .footer-section p {
+          color: #94a3b8;
+          line-height: 1.6;
+        }
+
+        .footer-section ul {
+          list-style: none;
+        }
+
+        .footer-section ul li {
+          margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+          color: #94a3b8;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+          color: #f1f5f9;
+        }
+
+        .footer-stats {
+          display: flex;
+          gap: 2rem;
+          margin-top: 1.5rem;
+        }
+
+        .footer-stat {
+          text-align: center;
+        }
+
+        .footer-stat strong {
+          display: block;
+          font-size: 1.5rem;
+          color: #2563eb;
+          font-weight: bold;
+        }
+
+        .footer-stat span {
+          font-size: 0.85rem;
+          color: #94a3b8;
+        }
+
+        .social-links {
+          display: flex;
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+
+        .social-links a {
+          width: 40px;
+          height: 40px;
+          background: #334155;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #94a3b8;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+          background: #2563eb;
+          color: white;
+        }
+
+        .footer-bottom {
+          border-top: 1px solid #334155;
+          padding-top: 2rem;
+        }
+
+        .footer-bottom-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+
+        .footer-links {
+          display: flex;
+          gap: 2rem;
+        }
+
+        .footer-links a {
+          color: #94a3b8;
+          text-decoration: none;
+          font-size: 0.9rem;
+          transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+          color: #f1f5f9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .nav-menu {
+            position: fixed;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+          }
+
+          .nav-menu.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+          }
+
+          .nav-list {
+            flex-direction: column;
+            padding: 2rem;
+            gap: 1rem;
+          }
+
+          .nav-toggle {
+            display: block;
+          }
+
+          .hero-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 2rem;
+          }
+
+          .hero-title {
+            font-size: 2.5rem;
+          }
+
+          .hero-buttons {
+            justify-content: center;
+          }
+
+          .hero-stats {
+            justify-content: center;
+            gap: 1.5rem;
+          }
+
+          .newsletter-form {
+            flex-direction: column;
+          }
+
+          .calculators-grid,
+          .benefits-grid,
+          .testimonials-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .steps-grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+
+          .footer-bottom-content {
+            flex-direction: column;
+            text-align: center;
+          }
+
+          .footer-stats {
+            justify-content: center;
+            gap: 1.5rem;
+          }
+
+          .tools-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .tool-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 0.75rem;
+          }
+
+          .footer-links {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .container {
+            padding: 0 15px;
+          }
+
+          .hero {
+            padding: 100px 0 60px;
+          }
+
+          .hero-title {
+            font-size: 2rem;
+          }
+
+          .section-title {
+            font-size: 2rem;
+          }
+
+          .btn-large {
+            padding: 0.875rem 1.5rem;
+            font-size: 1rem;
+          }
+
+          .hero-stats {
+            flex-direction: column;
+            gap: 1rem;
+          }
+
+          .tools-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .tool-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 0.75rem;
+          }
+
+          .footer-stats {
+            flex-direction: column;
+            gap: 1rem;
+          }
+
+          .footer-links {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+          }
+        }
+    </style>
+    
+    <!-- Added structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FinCalculator",
+      "description": "Free financial calculators for loans, investments, retirement planning, taxes, and more.",
+      "url": "https://fincalculator.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://fincalculator.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FinCalculator",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fincalculator.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "FinCalculator",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web Browser",
+      "description": "Comprehensive suite of free financial calculators including loan, mortgage, investment, retirement, and tax calculators.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "2547"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <i class="fas fa-calculator"></i>
+                <span>FinCalculator</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#calculators" class="nav-link">Calculators</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-primary">Try Calculators</button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Simplify Your Finances with Smart Calculators</h1>
+                    <p class="hero-subtitle">Make informed financial decisions with our comprehensive suite of calculators. Whether you're planning for retirement, calculating loan payments, or optimizing your investments, our tools provide instant, accurate results to help you achieve your financial goals.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50,000+</span>
+                            <span class="stat-label">Happy Users</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Calculators</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Accuracy</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large">Start Calculating</button>
+                        <button class="btn btn-secondary btn-large">Explore All Tools</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-illustration">
+                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-piggy-bank"></i>
+                        <i class="fas fa-coins"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Calculators -->
+    <section class="featured-calculators" id="calculators">
+        <div class="container">
+            <h2 class="section-title">Popular Calculators</h2>
+            <p class="section-subtitle">Our most popular financial calculators, trusted by thousands of users worldwide to make smart money decisions.</p>
+            <div class="calculators-grid">
+                <div class="calculator-card">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Loan Calculator</h3>
+                    <p>Calculate monthly payments, total interest, and amortization schedules for personal loans, auto loans, and mortgages. Compare different loan terms and interest rates to find the best option for your budget.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">Monthly Payments</span>
+                        <span class="feature-tag">Interest Rates</span>
+                        <span class="feature-tag">Amortization</span>
+                    </div>
+                    <button class="btn btn-outline">Use Now</button>
+                </div>
+                <div class="calculator-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <h3>Investment Calculator</h3>
+                    <p>Plan your investment strategy with compound interest calculations, portfolio growth projections, and risk assessment tools. See how your investments can grow over time with different contribution amounts and frequencies.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">Compound Interest</span>
+                        <span class="feature-tag">Portfolio Growth</span>
+                        <span class="feature-tag">Risk Analysis</span>
+                    </div>
+                    <button class="btn btn-outline">Use Now</button>
+                </div>
+                <div class="calculator-card">
+                    <div class="card-icon">
+                        <i class="fas fa-umbrella"></i>
+                    </div>
+                    <h3>Retirement Calculator</h3>
+                    <p>Plan for your golden years with comprehensive retirement planning tools. Calculate how much you need to save, when you can retire, and what your retirement income will be based on your current savings and contributions.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">Savings Goals</span>
+                        <span class="feature-tag">Retirement Age</span>
+                        <span class="feature-tag">Income Planning</span>
+                    </div>
+                    <button class="btn btn-outline">Use Now</button>
+                </div>
+                <div class="calculator-card">
+                    <div class="card-icon">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h3>Tax Calculator</h3>
+                    <p>Estimate your federal and state tax liability with our comprehensive tax calculator. Plan for tax season, optimize your withholdings, and explore tax-saving strategies to minimize your tax burden legally.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">Federal & State</span>
+                        <span class="feature-tag">Deductions</span>
+                        <span class="feature-tag">Tax Planning</span>
+                    </div>
+                    <button class="btn btn-outline">Use Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How Our Calculators Work</h2>
+            <p class="section-subtitle">Our calculators are designed with simplicity and accuracy in mind. Follow these three simple steps to get the financial insights you need.</p>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3>Choose a Calculator</h3>
+                    <p>Browse our comprehensive collection of 25+ financial calculators. Each tool is specifically designed for different financial scenarios, from basic budgeting to complex investment planning.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Input Your Data</h3>
+                    <p>Enter your financial information using our intuitive forms. Our smart validation ensures you input the right data format, and helpful tooltips guide you through each field for accurate results.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Get Detailed Results</h3>
+                    <p>Receive instant calculations with detailed breakdowns, charts, and actionable insights. Export your results, save scenarios, and share findings with your financial advisor or family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose FinCalculator?</h2>
+            <p class="section-subtitle">Join thousands of users who trust FinCalculator for their financial planning needs. Here's what makes us different.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Accurate & Reliable</h3>
+                    <p>Our calculators use industry-standard financial formulas validated by certified financial planners. We regularly update our algorithms to reflect current market conditions and regulatory changes, ensuring 99.9% calculation accuracy.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-friendly"></i>
+                    </div>
+                    <h3>Easy to Use</h3>
+                    <p>Designed with user experience in mind, our calculators feature intuitive interfaces, helpful tooltips, and step-by-step guidance. No financial expertise required – anyone can use our tools effectively.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Save Time & Effort</h3>
+                    <p>Get instant results without complex manual calculations or expensive spreadsheet software. What used to take hours of work can now be completed in minutes with our automated tools.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Completely Free</h3>
+                    <p>All our calculators are 100% free to use with no hidden fees, subscriptions, or premium tiers. We believe everyone deserves access to quality financial planning tools regardless of their budget.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy Protected</h3>
+                    <p>Your financial data never leaves your browser. All calculations are performed locally, ensuring complete privacy and security of your sensitive financial information.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Optimized</h3>
+                    <p>Access our calculators anywhere, anytime. Our responsive design works perfectly on smartphones, tablets, and desktops, so you can plan your finances on the go.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Calculators -->
+    <section class="all-calculators">
+        <div class="container">
+            <h2 class="section-title">Complete Calculator Suite</h2>
+            <p class="section-subtitle">Explore our complete collection of financial calculators, organized by category to help you find exactly what you need.</p>
+            
+            <div class="calculator-categories">
+                <div class="category-section">
+                    <h3 class="category-title">Loan & Debt Calculators</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-home"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Mortgage Calculator</span>
+                                <span class="tool-desc">Calculate monthly payments and total interest</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-credit-card"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">EMI Calculator</span>
+                                <span class="tool-desc">Equated Monthly Installment calculator</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-car"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Auto Loan Calculator</span>
+                                <span class="tool-desc">Vehicle financing calculations</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-credit-card"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Credit Card Payoff</span>
+                                <span class="tool-desc">Debt elimination strategies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h3 class="category-title">Investment & Savings</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">SIP Calculator</span>
+                                <span class="tool-desc">Systematic Investment Plan returns</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-piggy-bank"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Savings Calculator</span>
+                                <span class="tool-desc">Track your savings growth</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-coins"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Compound Interest</span>
+                                <span class="tool-desc">Power of compounding calculator</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Portfolio Calculator</span>
+                                <span class="tool-desc">Investment portfolio analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h3 class="category-title">Retirement & Planning</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-umbrella"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Retirement Calculator</span>
+                                <span class="tool-desc">Plan your retirement savings</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-receipt"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Tax Calculator</span>
+                                <span class="tool-desc">Federal and state tax estimation</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-wallet"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Budget Planner</span>
+                                <span class="tool-desc">Monthly budget optimization</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-heart"></i>
+                            <div class="tool-info">
+                                <span class="tool-name">Life Insurance</span>
+                                <span class="tool-desc">Coverage needs calculator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"FinCalculator helped me plan my retirement savings perfectly. The tools are so easy to use!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Financial Planner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I use the loan calculator every time I'm considering a major purchase. It's incredibly accurate!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <span>Small Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The investment calculator showed me exactly how to reach my financial goals. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Davis</h4>
+                            <span>Marketing Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Get answers to the most common questions about our financial calculators and how to use them effectively.</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are the calculators really free to use?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely! All our calculators are completely free to use with no hidden fees, subscription requirements, or premium tiers. We believe everyone deserves access to quality financial planning tools regardless of their budget. You can use any calculator as many times as you want without any limitations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How accurate are your financial calculations?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our calculators use industry-standard financial formulas that have been validated by certified financial planners and mathematicians. We maintain 99.9% calculation accuracy and regularly update our algorithms to reflect current market conditions, interest rates, and regulatory changes. However, results should be used for planning purposes and may vary from actual outcomes due to market fluctuations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you store my personal financial information?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, we prioritize your privacy and security. All calculations are performed locally in your browser, which means your financial data never leaves your device or gets transmitted to our servers. We don't store, track, or have access to any of the personal or financial information you enter into our calculators.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I use the calculators on my mobile phone or tablet?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our calculators are fully responsive and optimized for all devices including smartphones, tablets, laptops, and desktop computers. The interface automatically adapts to your screen size, ensuring a smooth user experience whether you're planning finances at home or on the go.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What makes your calculators different from others online?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our calculators stand out through their combination of accuracy, ease of use, and comprehensive features. We provide detailed explanations, helpful tooltips, visual charts, and actionable insights with every calculation. Plus, our tools are completely free, privacy-focused, and regularly updated to ensure they meet current financial standards and regulations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer customer support if I need help?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide comprehensive customer support through multiple channels. You can reach us via email, our contact form, or live chat during business hours. We typically respond within 24 hours and are happy to help with calculator usage, technical issues, or general financial planning questions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I save or export my calculation results?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Many of our calculators include options to save scenarios, export results to PDF, or print detailed reports. This makes it easy to share findings with your financial advisor, compare different scenarios, or keep records for your financial planning documentation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your calculators suitable for professional financial advisors?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our calculators are used by both individual consumers and financial professionals. They provide the accuracy and detailed analysis that professionals need while remaining accessible to everyday users. Many financial advisors use our tools for quick calculations and client presentations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest finance tips and tools delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About FinCalculator</h3>
+                    <p>FinCalculator is your trusted partner in financial planning. We provide free, accurate, and easy-to-use financial calculators to help individuals and families make informed decisions about their money. Our mission is to democratize financial planning by making professional-grade tools accessible to everyone.</p>
+                    <div class="footer-stats">
+                        <div class="footer-stat">
+                            <strong>50,000+</strong>
+                            <span>Users Trust Us</span>
+                        </div>
+                        <div class="footer-stat">
+                            <strong>1M+</strong>
+                            <span>Calculations Performed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#calculators">Calculators</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Tools</h3>
+                    <ul>
+                        <li><a href="#">Mortgage Calculator</a></li>
+                        <li><a href="#">Investment Calculator</a></li>
+                        <li><a href="#">Retirement Planner</a></li>
+                        <li><a href="#">Tax Estimator</a></li>
+                        <li><a href="#">Loan Calculator</a></li>
+                        <li><a href="#">SIP Calculator</a></li>
+                        <li><a href="#">EMI Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Financial Blog</a></li>
+                        <li><a href="#">Planning Guides</a></li>
+                        <li><a href="#">Calculator Tutorials</a></li>
+                        <li><a href="#">Financial Tips</a></li>
+                        <li><a href="#">Market Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us for financial tips, calculator updates, and money management advice.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 FinCalculator. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Embedded all JavaScript inline -->
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById("nav-toggle")
+        const navMenu = document.getElementById("nav-menu")
+
+        navToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("active")
+        })
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll(".nav-link")
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            navMenu.classList.remove("active")
+          })
+        })
+
+        // Sticky Header
+        const header = document.getElementById("header")
+        let lastScrollTop = 0
+
+        window.addEventListener("scroll", () => {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+
+          if (scrollTop > 100) {
+            header.style.background = "rgba(255, 255, 255, 0.95)"
+            header.style.backdropFilter = "blur(10px)"
+          } else {
+            header.style.background = "#fff"
+            header.style.backdropFilter = "none"
+          }
+
+          lastScrollTop = scrollTop
+        })
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll(".faq-item")
+
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-question")
+
+          question.addEventListener("click", () => {
+            const isActive = item.classList.contains("active")
+
+            // Close all FAQ items
+            faqItems.forEach((faqItem) => {
+              faqItem.classList.remove("active")
+            })
+
+            // Open clicked item if it wasn't active)
+            if (!isActive) {
+              item.classList.add("active")
+            }
+          })
+        })
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault()
+            const target = document.querySelector(this.getAttribute("href"))
+
+            if (target) {
+              const headerHeight = header.offsetHeight
+              const targetPosition = target.offsetTop - headerHeight
+
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              })
+            }
+          })
+        })
+
+        // Newsletter Form Submission
+        const newsletterForm = document.querySelector(".newsletter-form")
+        newsletterForm.addEventListener("submit", (e) => {
+          e.preventDefault()
+          const email = e.target.querySelector('input[type="email"]').value
+
+          // Simple validation
+          if (email && email.includes("@")) {
+            alert("Thank you for subscribing! We'll keep you updated with the latest finance tips.")
+            e.target.reset()
+          } else {
+            alert("Please enter a valid email address.")
+          }
+        })
+
+        // Calculator Card Click Handlers
+        const calculatorCards = document.querySelectorAll(".calculator-card")
+        calculatorCards.forEach((card) => {
+          const button = card.querySelector(".btn")
+          button.addEventListener("click", () => {
+            const calculatorType = card.querySelector("h3").textContent
+            alert(`Opening ${calculatorType}... (This would redirect to the actual calculator page)`)
+          })
+        })
+
+        // Tool Item Click Handlers
+        const toolItems = document.querySelectorAll(".tool-item")
+        toolItems.forEach((item) => {
+          item.addEventListener("click", () => {
+            const toolName = item.querySelector(".tool-name").textContent
+            alert(`Opening ${toolName}... (This would redirect to the actual calculator page)`)
+          })
+        })
+
+        // CTA Button Handlers
+        const ctaButtons = document.querySelectorAll(".btn-primary, .btn-secondary")
+        ctaButtons.forEach((button) => {
+          if (
+            button.textContent.includes("Start Calculating") ||
+            button.textContent.includes("Try Calculators") ||
+            button.textContent.includes("Explore All Tools")
+          ) {
+            button.addEventListener("click", () => {
+              document.querySelector("#calculators").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            })
+          }
+        })
+
+        // Animation on Scroll (Simple Implementation)
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1"
+              entry.target.style.transform = "translateY(0)"
+            }
+          })
+        }, observerOptions)
+
+        // Observe elements for animation
+        const animateElements = document.querySelectorAll(".calculator-card, .benefit-card, .testimonial-card, .step")
+        animateElements.forEach((el) => {
+          el.style.opacity = "0"
+          el.style.transform = "translateY(20px)"
+          el.style.transition = "opacity 0.6s ease, transform 0.6s ease"
+          observer.observe(el)
+        })
+
+        // Loading Animation (Simple)
+        window.addEventListener("load", () => {
+          document.body.style.opacity = "0"
+          document.body.style.transition = "opacity 0.5s ease"
+
+          setTimeout(() => {
+            document.body.style.opacity = "1"
+          }, 100)
+        })
+    </script>
+</body>
+</html>
